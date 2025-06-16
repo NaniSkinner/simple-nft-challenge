@@ -2,14 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { DeployFunction } from "hardhat-deploy/types";
-import { HardhatRuntimeEnvironment } from "hardhat/types";
 import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address } from "~~/components/scaffold-eth";
-
-// import { Contract } from "ethers";
 
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();
